@@ -6,7 +6,7 @@ htm, body{
 }
 
 body{
-    min-height: 100%;
+    
     background-image: url(Fotos/background.jpg);
     display: flex;
     flex-direction: column;
@@ -32,13 +32,19 @@ body{
     font-size: 35px;
 }
 
-.paragrafos {
+.paragrafos{
+    display: flex;
+    justify-content: center;
     color: rgb(255, 255, 255);
-    margin-top:5px;
-    margin-left: 35%;
-    margin-right: 35%;
-    padding: 5px;
+    
 
+}
+.paragrafos p{
+    width: 400px;
+    text-align: justify;
+    text-indent: 30px;
+    margin: 60px;
+    padding: 30px;
 }
 
 .secao {
@@ -114,13 +120,13 @@ h2, h1{
         font-size: 20px;
     }
     .paragrafos{
-            color: rgb(255, 255, 255);
-            margin-top:5px;
-            margin-left: 9%;
-            margin-right: 9%;
-            padding: 40px;
+        color: rgb(255, 255, 255);
         
-        }
+        
+           
+            
+        
+    }
     .cabecalho{
         font-size: 10px;
     }

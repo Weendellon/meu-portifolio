@@ -17,12 +17,10 @@ body{
 
 
 .fotoPerfil {
-    margin-top: 5px;
     max-width: 100%;
     height: 100%;
     border-radius: 50%;
-    width: 300px;
-    height: 340px;
+    width: 200px;
     border: solid 3px white;
 
 }
@@ -55,23 +53,6 @@ body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-.icones{
-    width: 35px;
-    height: 35px;  
-     
-}
-
-.icones2{
-   color: rgb(255, 255, 255);
-   padding: 15px;
-   text-decoration: none;
-}
-.icones-contato{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-bottom: 50px;
-}
 h2, h1{
     text-align: center;
     color: white;
@@ -84,7 +65,7 @@ h2, h1{
 }
 
 .empresa{
-    font-size: 10px;
+    font-size: 20px;
     margin-right: 15px;
     
 }
@@ -98,15 +79,68 @@ h2, h1{
     background: rgba(0, 0, 0, 0.281);
     margin-top: 30px;
 }
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 25px;
+    
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content:center;
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    transition-property: outline-offset, outline-color,
+    background-color;
+    transition-duration: .25s;
+}
+.icon:hover{
+    outline-offset: 4px;
+}
+.icon:hover i {
+    animation: shake .25s;
+}
+.icon--instagran:hover{
+    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    outline-color: #a02d76;
+}
+.icon--twitter:hover{
+    background-color: #2ca5f0;
+    outline-color: #2ca5f0;
+}
+.icon--linkedin:hover{
+    background-color: #0077b5;
+    outline-color: #0077b5;
+}
+.icon--github:hover{
+    background-color: #2ea44f;
+    outline-color: #2ea44f;
+}
+.icon--facebook:hover{
+    background-color: #1da1f2;
+    outline-color: #1da1f2;
+}
+.icon--whatsapp:hover{
+    background-color: #28c254;
+    outline-color: #28c254;
+}
+@keyframes shake {
+    10% {transform: rotate(15deg);}
+    20% {transform: rotate(-15deg);}
+    30% {transform: rotate(15deg);}
+    40% {transform: rotate(-15deg);}
+}
 
 @media ( max-width:626px )
 {
-    .icones-contato{
-        
-        max-width: 390px;
-        margin: 0 auto;
-        flex-wrap: wrap;
-    }
+
     .fotoPerfil {
         margin-top: 5px;
         max-width: 100%;
@@ -120,15 +154,18 @@ h2, h1{
         font-size: 20px;
     }
     .paragrafos{
-        color: rgb(255, 255, 255);
-        
-        
-           
-            
-        
+        color: rgb(255, 255, 255);     
     }
     .cabecalho{
         font-size: 10px;
+    }
+    .icons{
+        margin: auto;
+        flex-wrap: wrap;
+        max-width:70%;
+    }
+    .icon{
+        margin-top: 20px;
     }
 }
 

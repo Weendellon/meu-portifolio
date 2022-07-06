@@ -61,8 +61,12 @@ h3{
 .cabecalho{
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    margin: auto;
     align-items: center;
+    max-width: 1000px;
+}
+.logo{
+    width:150px;
 }
 
 .empresa{
@@ -77,8 +81,12 @@ h3{
     margin: 0;
     padding-top: 15px;
     padding-bottom: 15px;
-    background: rgba(0, 0, 0, 0.281);
+    background: #00000048;
     margin-top: 30px;
+}
+.contato{
+    border-top: 2px solid #00000048;
+    margin-top: 50px;
 }
 
 
@@ -99,6 +107,7 @@ h3{
     justify-content:center;
     text-decoration: none;
     font-size: 22px;
+    margin-top: 15px;
     color: #fff;
     border-radius: 50%;
     outline: 2px solid #fff;
@@ -167,13 +176,20 @@ h3{
     .cabecalho{
         display: block;
     }
+    .container-logo{
+        text-align: center;
+    }
+    .logo{
+        width: 90px;
+        margin-bottom: 20px;
+    }
 
     .cabecalho h1{
         font-size: 15px;
         text-align: center;
     }
     .cabecalho h2{
-        text-align: center;
+        display: none;
     }
     .paragrafo{
         max-width: 300px;
@@ -192,6 +208,7 @@ h3{
         flex-wrap: wrap;
         margin-left: 10%;
         margin-right: 10%;
+
     }
    
    

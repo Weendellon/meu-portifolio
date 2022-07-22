@@ -8,46 +8,37 @@
 
 body{
     background: linear-gradient(45deg, #1B7BCE 0%, #12B9FE 36%, #087BC5 100%);
-    animation: color 15s ease infinite;
-
-    
+    animation: color 15s ease infinite;   
 }
-
-
 .fotoPerfil {
     border-radius: 50%;
     width: 200px;
     border: solid 3px white;
-
 }
-
 .secao h2{
     font-family: 'Poppins', sans-serif;
     font-size: 45px;
     text-shadow: 3px 4px #0000002f;
-
+    margin: auto;
 }
-
 .paragrafo{
     color:#080505;
     -webkit-box-shadow: 5px 5px 5px 5px #000000; 
     box-shadow: 5px 5px 5px 5px #000000;
-    width: 600px;
-    padding: 20px;
+    width: 500px;
     margin: auto;
+    padding: 20px;
     position:relative;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
 }
 .paragrafo p{
     font-size: 20px;
     width: 490px;
     padding: 10px;
-    text-align:justify;
-    
+    text-align:justify;   
 }
-
 .secao {
     text-align: center;
     margin-bottom: 30px;
@@ -68,11 +59,9 @@ h3{
 .logo{
     width:150px;
 }
-
 .empresa{
     font-size: 20px;
-    margin-right: 15px;
-    
+    margin-right: 15px;    
 }
 .text-footer{
     color: #fff;
@@ -88,16 +77,13 @@ h3{
     border-top: 2px solid #00000048;
     margin-top: 50px;
 }
-
-
 /* icones de midia sociais */
 .icons{
     margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 25px;
-    
+    column-gap: 25px;   
 }
 .icon{
     width: 50px;
@@ -161,9 +147,12 @@ h3{
     100%{
         background-position: 0% 50%;
     }
-
 }
-
+.container-header{
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+}
 @media ( max-width:626px )
 {
     
@@ -201,16 +190,17 @@ h3{
     .text-footer{
         padding: 40px;
         font-size: 10px;
-
     }
-
     .icons{
         flex-wrap: wrap;
         margin-left: 10%;
         margin-right: 10%;
-
     }
-   
-   
+    .container-header{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: auto;
+    }  
 }
 

@@ -9,7 +9,9 @@
 
 body{
     background: linear-gradient(45deg, #1B7BCE 0%, #12B9FE 36%, #087BC5 100%);
-    animation: color 15s ease infinite;   
+    animation: color 15s ease infinite;
+    width: 100%;
+    height: 100vh;  
 }
 .fotoPerfil {
     border-radius: 50%;
@@ -23,14 +25,13 @@ body{
 }
 .paragrafo{
     color:#080505;
-    -webkit-box-shadow: 5px 5px 5px 5px #000000; 
-    box-shadow: 5px 5px 5px 5px #000000;
+    box-shadow: 5px 5px 10px black;
     width: 500px;
     padding: 20px;
-    position:relative;
     display: flex;
     justify-content:center;
     align-items: center;
+    margin-right: 60px;
 }
 .paragrafo p{
     font-size: 20px;
@@ -75,19 +76,22 @@ h3{
 .logo{
     width:150px;
 }
-.text-footer{
-    color: #fff;
-    font-weight:500;
-    text-align: center;
-    margin: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background: #00000048;
-    margin-top: 30px;
-}
 .contato{
     margin-top: 50px;
 }
+.container-header{
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+}
+.footer{
+    color: #000000;
+    margin-top: 30px;
+    padding: 30px;
+    background-color: #0000002f;
+    text-align: center;
+}
+
 /* icones de midia sociais */
 .icons{
     margin-top: 30px;
@@ -159,14 +163,13 @@ h3{
         background-position: 0% 50%;
     }
 }
-.container-header{
-    display: flex;
-    padding: 30px;
-    justify-content: center;
-}
+
 @media ( max-width:626px )
 {
     
+    .secao {
+        margin-bottom: 20px;
+    }
     .secao img{
         width: 150px;  
     }
@@ -174,13 +177,13 @@ h3{
         font-size: 20px;
     }
     .cabecalho{
-        display: block;
+        flex-direction: column;
     }
     .container-logo{
         text-align: center;
     }
     .logo{
-        width: 90px;
+        width: 150px;
         margin-bottom: 20px;
     }
 
@@ -193,15 +196,12 @@ h3{
     }
     .paragrafo{
         max-width: 300px;
+        margin: auto;
     }
     
     .paragrafo p{
         text-align: center;
     }   
-    .text-footer{
-        padding: 40px;
-        font-size: 10px;
-    }
     .icons{
         flex-wrap: wrap;
         margin-left: 10%;
@@ -209,9 +209,9 @@ h3{
     }
     .container-header{
         display: flex;
-        flex-direction: column;
-        padding: 0;
-        margin: auto;
+        flex-direction:column-reverse;
+        
     }  
+
 }
 

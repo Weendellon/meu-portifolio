@@ -70,7 +70,7 @@ h3{
     
 }
 .menu ul li:hover{
-    outline-offset: 4px;
+    background-color: #0077b5;
 }
 .logo{
     width:150px;

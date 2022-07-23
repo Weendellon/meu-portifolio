@@ -67,11 +67,14 @@ h3{
     border-left: solid black 3px;
     background-color: #00000041;
     cursor: pointer;
-    border-radius: 5px;
-    
+    border-radius: 5px;  
 }
 .menu ul li:hover{
     background-color: #0077b5;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
 }
 .logo{
     width:150px;
@@ -91,6 +94,7 @@ h3{
     background-color: #0000002f;
     text-align: center;
 }
+/* Página de projetos*/
 
 /* icones de midia sociais */
 .icons{

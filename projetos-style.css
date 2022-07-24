@@ -3,8 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+.container-logo{
+    position: absolute;
+    margin: 0;
+}
 
 .container-logo img{
     width: 130px;
     margin-left: 30px;
+}
+.title-p{
+    padding: 27px;
 }

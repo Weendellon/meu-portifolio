@@ -55,17 +55,6 @@ ul li:active{
   transform: translate(0);
   box-shadow: none;
 }
-
-
-
-
-
-
-
-
-
-
-
 .container-projetos{
   margin: 150px 0;
   display: flex;

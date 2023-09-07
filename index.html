@@ -1,73 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="Fotos/icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css?ver=1.1">
+    <link rel="shortcut icon" href="asset/icon.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Dellon</title>
-
 </head>
-
 <body>
-    <div class="container">
-
-        <div class="cabecalho">
-            <div class="container-logo">
-                <img class="logo" src="Fotos/weendellon-logo.svg" alt="logo">
+    <!--Menu Mobile-->
+    <div class="menu-mobile">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #282C34; ">
+            <div class="container">
+                <div class="logo">
+                    <img src="asset/logo-dellon.jpg" alt="logo dellon"> 
+                </div>
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a href="projetos.html">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sessao-skill">Skill's</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sessao-sobre">Sobre</a>
+                </li>
             </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">Habilidades</a></li>
-                    <li><a href="projetos.html">Projetos</a></li>
-                </ul>
             </div>
-        </div>
-        <div class="container-header">
-            <div class="paragrafo">
-                <p>Oi! Me chamo Weendellon, tenho 31 anos, sou desenvolvedor e designer de sites, tenho domínio em html,
-                    CSS e Javascript, uso Bootstrap como framework, trabalho com WordPress também. Comecei a desenvolver
-                    em 2022 e desde então venho me dedicando e aprendendo bastante nessa área que sou apaixonado! Não
-                    poderia deixar de falar da minha familía, sou casado há 9 anos e tenho 2 filhos que amo demais.</p>
-            </div>
-            <section class="secao">
-                <img class="fotoPerfil" src="Fotos/foto-perfil.png" alt="foto">
-
-                <h2>Weendellon Gomes</h2>
-                <p>Web Developer</p>
-            </section>
-        </div>
-        <div class="contato">
-            <h3>Contatos</h3>
-        </div>
-
-        <div class="icons">
-            <a href="https://www.facebook.com/weendellon" target="_blank" class="icon icon--facebook"><i
-                    class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/weendellon/" target="_blank" class="icon icon--instagran"><i
-                    class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="icon icon--whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://twitter.com/Weendellon" target="_blank" class="icon icon--twitter"><i
-                    class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/weendellon/" target="_blank" class="icon icon--linkedin"><i
-                    class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/Weendellon" target="_blank" class="icon icon--github"><i
-                    class="fa-brands fa-github"></i></a>
-        </div>
-       
-    </div>
-
-    <div class="footer">
-        <p>&copy; Todos os direitos reservados | Dellon | Versão 1.5 Beta | 19/23</p>
+        </nav>
     </div>
             
-              
+    <!--Menu desktop-->
+    <nav class="container-header" data-aos="fade-down">
+        <div class="logo">
+            <img src="asset/logo-dellon.jpg" alt="logo dellon"> 
+            <h3 class="name-logo">Weendellon Gomes</h3>   
+        </div>
+        
+        <ul class="nav-menu">
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="/#sessao-skill">Skill's</a></li>
+            <li><a href="/#sessao-sobre">Sobre</a></li>
+        </ul>
+        <button class="button-dskt"><a href="https://linktr.ee/weendellon" target="_blank" rel="noopener noreferrer">Contato</a></button>
+    </nav>
 
+    <section class="titulo-container">
+        <div class="container-paragrafo" data-aos="fade-right">
+            <p class="titulo">Olá, Eu sou Dellon! ajudo pessoas e empresas de alto crescimento a colocar seus serviços no mercado mais rapidamente.</p>
+            <p class="subtitulo">Conecto você e sua empresa <span class="texto-subtitulo">ao mundo!</span></p>
+            <button class="button-dskt"><a href="https://linktr.ee/weendellon" target="_blank" rel="noopener noreferrer">Fale comigo</a></button>   
+        </div>
+
+        <img src="asset/Website designer.gif" alt="freepik"  data-aos="fade-up">
+
+    </section>
+
+    <section class="container-misão">
+
+        <img class="img-missao" data-aos="fade-right" src="asset/Code typing-rafiki.svg" alt="Work illustrations by Storyset">
+
+        <div class="container-paragrafo" data-aos="fade-left">
+            <p class="subtitulo">Minha <span class="texto-submissao">MISÃO!</span></p>
+            <p class="titulo-misao">Minha missão é impactar negócios, fornecendo soluções e estratégias para que estes, conquistem mais clientes e os mantenham fieis.<span class="texto-submissao"> E assim, consequentemente, aumentem seus faturamentos.</span></p>
+        </div>
+    </section>
+
+    <section id="sessao-sobre" class="container-sobre">
+        <div class="container-paragrafo" data-aos="fade-right">
+            <p class="subtitulo">Sobre <span class="texto-submissao">MIM!</span></p>
+            <p class="titulo-misao">Sou desenvolvedor desde 2022, sou dedicado e apaixonado pela área da programação, embora tenha adiquirido essa paixão a pouco tempo, estou em constante aprendizado e amo desafios!<span class="texto-submissao"> Acredito que a tecnologia é o futuro e por isso me empenho em aprender o máximo possível sobre ela!</span></p>
+        </div>
+
+        <img class="img-sobre" data-aos="fade-left" src="asset/developer.svg" alt="web-developer">
+
+    </section>
+
+
+    <section class="container-caracteristicas">
+
+        <img class="img-caracteristicas" data-aos="slide-right" src="asset/launch.svg" alt="web-developer">
+
+        <div class="container-paragrafor-caracteristicas" data-aos="fade-left">
+            <p class="subtitulo-caracteristicas">Por que ter um <span class="texto-submissao">SITE?</span></p>
+            <div class="container-artigos">
+                <p class="titulo-caracteristicas"><i class="fa-solid fa-circle-check" style="color: #ffd046;"></i>Traz mais clientes para a sua empresa</p>
+                <p class="titulo-caracteristicas"><i class="fa-solid fa-circle-check" style="color: #ffd046;"></i>Traz mais visibilidade para a empresa</p>
+                <p class="titulo-caracteristicas"><i class="fa-solid fa-circle-check" style="color: #ffd046;"></i>É encontrado nas Pesquisas do Google</p>
+                <p class="titulo-caracteristicas"><i class="fa-solid fa-circle-check" style="color: #ffd046;"></i>Você conhece melhor o seu público-alvo</p>
+                <p class="titulo-caracteristicas"><i class="fa-solid fa-circle-check" style="color: #ffd046;"></i>Exposição da marca 24 horas todos os dias</p>
+                <p class="titulo-caracteristicas"><i class="fa-solid fa-circle-check" style="color: #ffd046;"></i>Você não estará mais refém das redes sociais para vender</p>
+            </div>
+        </div> 
+    </section>
+
+    <h2 class="case-projetos">meus projetos</h2>
+
+    <section class="container-projetos">
+        <div class="container-paragrafo-projetos" data-aos="fade-right">
+            <h2 class="titulo-projeto">MediFoz</h2>
+            <p class="subtitulo-projeto">MediFoz é um Site de Assessoria, desenvolvido em Wordpress! <span class="texto-submissao">com páginas de ação de chamadas via Whatsapp para impulsionar os negocios da assessoria.</span></p>
+            <button class="button-dskt"><a href="projetos.html">Projetos</a></button>
+        </div>
+
+        <img class="img-projetos" data-aos="fade-left" src="asset/medifoz-banner.png" alt="web-developer">
+        <img class="img-mobile" data-aos="zoom-in-left" data-aos-delay="500" src="asset/medifoz-mobile.png" alt="mobile-medifoz">
+    </section>
+
+    <h2 id="sessao-skill" class="case-projetos">Minhas Skill's</h2>
+
+    <div class="parent">
+        <div class="div1"><img class="img-skill" src="asset/html.png" alt="html"> </div>
+        <div class="div2"><img class="img-skill" src="asset/css.png" alt=""> </div>
+        <div class="div3"><img class="img-skill" src="asset/javascript.png" alt=""> </div>
+        <div class="div4"><img class="img-skill" src="asset/bootstrap-stack.png" alt=""> </div>
+        <div class="div5"><img class="img-skill" src="asset/WordPress-Logo.png" alt=""> </div>
+        <div class="div6"><img class="img-skill" src="asset/62c6bc0beee9410fe137d91e.png" alt=""> </div>
+    </div>
+    
+    <footer>
+        <nav class="nav-footer" data-aos="fade-down">
+            <div class="logo logo-footer">
+                <a href="#"><img src="asset/logo-dellon.jpg" alt="logo dellon"></a>
+                <h3 class="name-logo">Weendellon Gomes</h3>   
+            </div>
+            
+            <ul class="menu-footer">
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="/#sessao-skill">Skill's</a></li>
+                <li><a href="/#sessao-sobre">Sobre</a></li>
+            </ul>
+        </nav>
+        <p class="texto-footer">2023 &copy; Desenvolvido por <a href="https://linktr.ee/weendellon" target="_blank">Dellon ♥ </a></p>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
-
 </html>
